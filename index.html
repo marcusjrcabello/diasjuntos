@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus X Naomy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💖 Días Juntos 💖</h1>
+        <p>Empezamos nuestra relacion el: <span id="start-date">01/01/2022</span> a las <span id="start-time">00:00</span></p>
+        <p>Hemos Estado Juntos durante: <span id="days-count">0</span> días, <span id="hours-count">0</span> horas, <span id="minutes-count">0</span> minutos y <span id="seconds-count">0</span> segundos!</p>
+        <!-- Control de música -->
+        <div class="music-controls">
+            <button id="prev-song">⏮ Anterior</button>
+            <button id="play-music">🎶 Reproducir Música 🎶</button>
+            <button id="next-song">Siguiente ⏭</button>
+          
+        </div>
+          <p id="current-song">Canción actual: <span id="song-title">Ninguna</span></p>
+          <div class="volume-control">
+            <label for="volume">Volumen:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+          </div>
+          <div class="progress-control">
+            <input type="range" id="progress-bar" min="0" max="100" value="0">
+            <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
+          </div>
+          <button id="loop">🔁 Bucle</button>
+        </div>
+
+    
+
+    <audio id="audio"></audio>
+   <script src="script.js"></script>
+</body>
+</html>
